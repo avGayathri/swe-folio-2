@@ -10,10 +10,7 @@ favicon: /-/avgayathri.github.io/swe-folio-2/favicon.ico
 
 -- fastn.auto-import: avgayathri.github.io/swe-folio-2/FASTN/ds
 -- fastn.auto-import: avgayathri.github.io/swe-folio-2/assets
+-- fastn.auto-import: avgayathri.github.io/swe-folio-2/lib
 -- fastn.auto-import: doc-site
 
--- fastn.sitemap:
 
-# Home: index.html
-
-- Right Sidebar Sample: /sidebar/
