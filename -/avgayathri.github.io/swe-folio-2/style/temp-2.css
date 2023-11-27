@@ -1,0 +1,49 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.font {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: bold;
+
+}
+
+.head-div {
+  background-image: linear-gradient(to bottom right, rgb(244, 45, 45), rgb(249, 149, 142));
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+
+.about-div {
+    background-color: #735751;
+}
+
+.about-title {
+    font-family: 'garamond';
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.about {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+}
+
+.about-m {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.zoom { 
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+  }
