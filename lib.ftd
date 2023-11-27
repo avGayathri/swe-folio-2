@@ -124,8 +124,6 @@ width: fill-container
 height.fixed.vw: 28
 margin-top.px: 30
 margin-bottom.px: 32
-border-color: yellow
-border-width.px: 3
 
 -- ftd.text: $snapshots.sub-title
 classes: about-title
