@@ -20,12 +20,12 @@ height: fill-container
 -- ftd.row:
 if: { ftd.device == "desktop" }
 width: fill-container
-height.fixed.vw: 12
-padding.px: 30
+height.fixed.vw: 20
 align-content: center
 
 -- ftd.text: $header.title
 color: white
+margin-top.px: 80
 
 -- end: ftd.row
 
@@ -45,15 +45,15 @@ color: white
 -- ftd.row:
 width: fill-container
 height.fixed.vw: 4
-padding.px: 20
 spacing.fixed.vw: 8
 align-content: center
+padding-bottom.px: 10
 
 -- ftd.text: $header.header-text-1
 color: black
 role: $inherited.types.blockquote
 link: $header.cta-link-1
-color if {header.is-active-1}: black
+color if {header.is-active-1}: white
 $on-mouse-enter$: $ftd.set-bool($a = $header.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $header.is-active-1, v = false)
 
@@ -61,7 +61,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $header.is-active-1, v = false)
 color: black
 role: $inherited.types.blockquote
 link: $header.cta-link-2
-color if {header.is-active-2}: black
+color if {header.is-active-2}: white
 $on-mouse-enter$: $ftd.set-bool($a = $header.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $header.is-active-2, v = false)
 
@@ -69,7 +69,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $header.is-active-2, v = false)
 color: black
 role: $inherited.types.blockquote
 link: $header.cta-link-3
-color if {header.is-active-3}: black
+color if {header.is-active-3}: white
 $on-mouse-enter$: $ftd.set-bool($a = $header.is-active-3, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $header.is-active-3, v = false)
 
@@ -114,7 +114,8 @@ align-content: center
 classes: about-title
 css: [ $assets.files.style.temp-2.css]
 text-align: center
-margin-top.vw: 2
+margin-top.vw: 4
+margin-bottom.vw: 4
 
 -- end: ftd.row
 
@@ -229,6 +230,241 @@ border-radius.px: 24
 
 
 
+-- component timeline:
+string title:
+string about:
+string sub-title:
+string social-text-1:
+string social-text-2:
+string social-text-3:
+string social-text-4:
+string social-link-1:
+string social-link-2:
+string social-link-3:
+string social-link-4:
+boolean $is-active-1: false
+boolean $is-active-2: false
+boolean $is-active-3: false
+boolean $is-active-4: false
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+classes: time
+css: [ $assets.files.style.temp-2.css]
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+padding.px: 60
+
+-- ftd.text: $timeline.title
+classes: font
+css: [ $assets.files.style.temp-2.css]
+
+-- ftd.text: $timeline.about
+color: pink
+
+-- ftd.text: $timeline.sub-title
+classes: font
+css: [ $assets.files.style.temp-2.css]
+
+
+-- ftd.text: $timeline.social-text-1
+link: $timeline.social-link-1
+color: pink
+color if {timeline.is-active-1}: white
+$on-mouse-enter$: $ftd.set-bool($a = $timeline.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $timeline.is-active-1, v = false)
+
+-- ftd.text: $timeline.social-text-2
+link: $timeline.social-link-2
+color: pink
+color if {timeline.is-active-2}: white
+$on-mouse-enter$: $ftd.set-bool($a = $timeline.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $timeline.is-active-2, v = false)
+
+-- ftd.text: $timeline.social-text-3
+link: $timeline.social-link-3
+color: pink
+color if {timeline.is-active-3}: white
+$on-mouse-enter$: $ftd.set-bool($a = $timeline.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $timeline.is-active-3, v = false)
+
+-- ftd.text: $timeline.social-text-4
+link: $timeline.social-link-4
+color: pink
+color if {timeline.is-active-4}: white
+$on-mouse-enter$: $ftd.set-bool($a = $timeline.is-active-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $timeline.is-active-4, v = false)
+
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+classes: time
+css: [ $assets.files.style.temp-2.css]
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+padding.px: 60
+align-content: center
+
+-- ftd.text: $timeline.title
+classes: font
+css: [ $assets.files.style.temp-2.css]
+
+-- ftd.text: $timeline.about
+text-align: center
+color: pink
+
+-- ftd.text: $timeline.sub-title
+classes: font
+css: [ $assets.files.style.temp-2.css]
+
+
+-- ftd.text: $timeline.social-text-1
+link: $timeline.social-link-1
+color: pink
+color if {timeline.is-active-1}: white
+$on-mouse-enter$: $ftd.set-bool($a = $timeline.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $timeline.is-active-1, v = false)
+
+-- ftd.text: $timeline.social-text-2
+link: $timeline.social-link-2
+color: pink
+color if {timeline.is-active-2}: white
+$on-mouse-enter$: $ftd.set-bool($a = $timeline.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $timeline.is-active-2, v = false)
+
+-- ftd.text: $timeline.social-text-3
+link: $timeline.social-link-3
+color: pink
+color if {timeline.is-active-3}: white
+$on-mouse-enter$: $ftd.set-bool($a = $timeline.is-active-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $timeline.is-active-3, v = false)
+
+-- ftd.text: $timeline.social-text-4
+link: $timeline.social-link-4
+color: pink
+color if {timeline.is-active-4}: white
+$on-mouse-enter$: $ftd.set-bool($a = $timeline.is-active-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $timeline.is-active-4, v = false)
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: timeline
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+string copyright:
+ftd.image-src logo:
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: fill-container
+
+-- ftd.row:
+width: fill-container
+height.fixed.vw: 5
+align-content: center
+background.solid: pink
+padding.px: 12
+
+
+-- ftd.image:
+src: $footer.logo
+width.fixed.px: 64
+height.fixed.px: 64
+border-radius.percent: 50
+margin-top.px: 3
+
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+height.fixed.vw: 4 
+align-content: center
+background.solid: pink
+
+
+-- ftd.text: $footer.copyright
+color: brown
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+height: fill-container
+;;spacing.fixed.px: 10
+
+-- ftd.row:
+width: fill-container
+height.fixed.vw: 12
+align-content: center
+background.solid: pink
+
+-- ftd.image:
+src: $footer.logo
+width.fixed.px: 36
+height.fixed.px: 36
+border-radius.percent: 50
+margin-top.px: 3
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+height.fixed.vw: 12 
+align-content: center
+background.solid: pink
+
+
+-- ftd.text: $footer.copyright
+color: brown
+role: $inherited.types.fine-print
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+
 
 -- component swe-folio-temp:
 string head-text-1:
@@ -246,6 +482,19 @@ ftd.image-src image-4:
 ftd.image-src image-5:
 ftd.image-src image-6:
 string sub-title-text:
+string time-title:
+string time-about:
+string time-sub-title:
+string social-text-1:
+string social-text-2:
+string social-text-3:
+string social-text-4:
+string social-link-1:
+string social-link-2:
+string social-link-3:
+string social-link-4:
+string copyright:
+ftd.image-src logo:
 
 
 -- ftd.column:
@@ -347,6 +596,24 @@ image-4: $swe-folio-temp.image-4
 image-5: $swe-folio-temp.image-5
 image-6: $swe-folio-temp.image-6
 sub-title: $swe-folio-temp.sub-title-text
+
+-- timeline:
+title: $swe-folio-temp.time-title
+about: $swe-folio-temp.time-about
+sub-title: $swe-folio-temp.time-sub-title
+social-text-1: $swe-folio-temp.social-text-1
+social-text-2: $swe-folio-temp.social-text-2
+social-text-3: $swe-folio-temp.social-text-3
+social-text-4: $swe-folio-temp.social-text-4
+social-link-1: $swe-folio-temp.social-link-1
+social-link-2: $swe-folio-temp.social-link-2
+social-link-3: $swe-folio-temp.social-link-3
+social-link-4: $swe-folio-temp.social-link-4
+
+
+-- footer:
+copyright: $swe-folio-temp.copyright
+logo: $swe-folio-temp.logo
 
 
 -- end: ftd.column

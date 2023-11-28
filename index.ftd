@@ -2,7 +2,7 @@
 head-text-1: **Home**
 head-text-2: **Projects**
 head-text-3: **Contacts**
-head-link-1: https://trizui.trizwit.com/;;index.html#home
+head-link-1: index.html
 head-link-2: https://trizui.trizwit.com/;;index.html#project
 head-link-3: https://trizui.trizwit.com/;;index.html#contact
 about-title: Crafting Digital Awesomeness
@@ -13,6 +13,19 @@ image-4: $assets.files.assets.bg1.jpg
 image-5: $assets.files.assets.profile-pic.jpg
 image-6: $assets.files.assets.image-2.jpg
 sub-title-text: Featured Coding Chronicles
+time-title: Timeline
+time-about: A spectacular journey of coding, designing, and creating breathtaking digital solutions.
+time-sub-title: Highlights
+social-text-1: Github
+social-text-2: Linkedin
+social-text-3: Twitter
+social-text-4: Facebook
+social-link-1: https://github.com/
+social-link-2: https://www.linkedin.com/
+social-link-3: https://twitter.com/
+social-link-4: https://www.facebook.com/
+copyright: **Copyright © 2023 - David, Software Engineer**
+logo: $assets.files.assets.logo.png
 
 Welcome to the realm of Ethan Matthews, a maestro of full-stack development. He doesn’t just code, he conjures miracles with syntax. 
 Be ready to voyage through an odyssey of his stellar projects.
