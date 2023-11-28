@@ -467,6 +467,7 @@ role: $inherited.types.fine-print
 
 
 -- component swe-folio-temp:
+string head-title: 
 string head-text-1:
 string head-text-2:
 string head-text-3:
@@ -512,7 +513,7 @@ header-text-3: $swe-folio-temp.head-text-3
 cta-link-1: $swe-folio-temp.head-link-1
 cta-link-2: $swe-folio-temp.head-link-2
 cta-link-3: $swe-folio-temp.head-link-3
-title: **RESPE**
+title: $swe-folio-temp.head-title 
 
 -- end: ftd.column
 
